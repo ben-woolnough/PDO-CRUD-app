@@ -29,3 +29,19 @@
     </div>
   </div>
 <?php endif; ?>
+
+<?php if (isset($_GET['create-success'])) : ?>
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+      Record created!
+    </div>
+  </div>
+<?php endif; ?>
+
+<?php if (isset($_GET['create-fail'])) : ?>
+  <div class="container">
+    <div class="alert alert-danger" role="alert">
+      Error creating record.
+    </div>
+  </div>
+<?php endif; ?>
